@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use Encore\Admin\Reporter\Reporter;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
@@ -36,7 +37,12 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
-        parent::report($exception);
+        //错误日志存入数据库
+        //https: //github.com/laravel-admin-extensions/reporter
+        if ($this->shouldReport($exception)) {
+            Reporter::report($exception);
+        }
+        // parent::report($exception);
     }
 
     /**
