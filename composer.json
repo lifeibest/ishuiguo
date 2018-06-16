@@ -8,13 +8,18 @@
         "php": ">=7.0.0",
         "encore/laravel-admin": "1.5.*",
         "fideloper/proxy": "~3.3",
+        "laravel-admin-ext/api-tester": "^1.0",
         "laravel-admin-ext/helpers": "^1.0",
         "laravel-admin-ext/log-viewer": "^1.0",
+        "laravel-admin-ext/redis-manager": "^1.0",
         "laravel-admin-ext/reporter": "^1.0",
+        "laravel-admin-ext/scheduling": "^1.0",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "zgldh/qiniu-laravel-storage": "^0.9.2"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.1",
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "~1.0",

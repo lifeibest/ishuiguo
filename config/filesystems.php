@@ -11,7 +11,7 @@ return [
     | by the framework. The "local" disk, as well as a variety of cloud
     | based disks are available to your application. Just store away!
     |
-    */
+     */
 
     'default' => env('FILESYSTEM_DRIVER', 'local'),
 
@@ -24,7 +24,7 @@ return [
     | reason, you may specify a default "cloud" driver here. This driver
     | will be bound as the Cloud disk implementation in the container.
     |
-    */
+     */
 
     'cloud' => env('FILESYSTEM_CLOUD', 's3'),
 
@@ -39,7 +39,7 @@ return [
     |
     | Supported Drivers: "local", "ftp", "s3", "rackspace"
     |
-    */
+     */
 
     'disks' => [
 
@@ -51,7 +51,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
         ],
 
@@ -61,6 +61,20 @@ return [
             'secret' => env('AWS_SECRET_ACCESS_KEY'),
             'region' => env('AWS_DEFAULT_REGION'),
             'bucket' => env('AWS_BUCKET'),
+        ],
+
+        'qiniu' => [
+            'driver' => 'qiniu',
+            'domains' => [
+                'default' => 'filecdn.ishuiguo.com', //你的七牛域名
+                'https' => 'filecdn.ishuiguo.com', //你的HTTPS域名
+                'custom' => 'filecdn.ishuiguo.com', //你的自定义域名
+            ],
+            'access_key' => 'cVdJMJrNBWMszk0vmPocfGJklL_RmPx-UU1Yw1Mt', //AccessKey
+            'secret_key' => 'xbeYAZ7aMqOJsQW2ziqZFX61uRU5D01EG2_wiCyj', //SecretKey
+            'bucket' => 'filecdn', //Bucket名字
+            'notify_url' => '', //持久化处理回调地址
+            'url' => 'http://filecdn.ishuiguo.com/', // 填写文件访问根url
         ],
 
     ],

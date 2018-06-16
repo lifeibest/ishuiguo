@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "531f92df5bbbe829e060e087c5bce514",
+    "content-hash": "bd0a12c2e8860319813b3ecbc9d98ad4",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -478,6 +478,61 @@
             "time": "2015-04-20T18:58:01+00:00"
         },
         {
+            "name": "laravel-admin-ext/api-tester",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/api-tester.git",
+                "reference": "5884bb17b97b853d968d057c8acf1439f26a2a83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/laravel-admin-extensions/api-tester/5884bb17b97b853d968d057c8acf1439f26a2a83.zip",
+                "reference": "5884bb17b97b853d968d057c8acf1439f26a2a83",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.5",
+                "laravel/framework": "~5.5",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "~5.5",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\ApiTester\\ApiTesterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\ApiTester\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Api tester for laravel",
+            "homepage": "https://github.com/laravel-admin-extensions/api-tester",
+            "keywords": [
+                "api",
+                "laravel-admin",
+                "tester"
+            ],
+            "time": "2018-04-27T09:09:23+00:00"
+        },
+        {
             "name": "laravel-admin-ext/helpers",
             "version": "v1.0.2",
             "source": {
@@ -587,6 +642,62 @@
             "time": "2018-04-25T06:14:03+00:00"
         },
         {
+            "name": "laravel-admin-ext/redis-manager",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/redis-manager.git",
+                "reference": "391d683fc7fa27535142c20de5a70aa9f94ef23c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/laravel-admin-extensions/redis-manager/391d683fc7fa27535142c20de5a70aa9f94ef23c.zip",
+                "reference": "391d683fc7fa27535142c20de5a70aa9f94ef23c",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.5",
+                "laravel/framework": "~5.5",
+                "php": ">=7.0.0",
+                "predis/predis": "~1.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "~5.5",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\RedisManager\\RedisManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\RedisManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Redis manager for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-extensions/redis-manager",
+            "keywords": [
+                "laravel-admin",
+                "manager",
+                "redis"
+            ],
+            "time": "2018-05-03T07:59:06+00:00"
+        },
+        {
             "name": "laravel-admin-ext/reporter",
             "version": "v1.0.1",
             "source": {
@@ -640,6 +751,61 @@
                 "reporter"
             ],
             "time": "2018-04-24T11:57:24+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/scheduling",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/scheduling.git",
+                "reference": "663ef072b65e8c01c004c3c4577a9428904ba78c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/laravel-admin-extensions/scheduling/663ef072b65e8c01c004c3c4577a9428904ba78c.zip",
+                "reference": "663ef072b65e8c01c004c3c4577a9428904ba78c",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.5",
+                "laravel/framework": "~5.5",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "~5.5",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\Scheduling\\SchedulingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\Scheduling\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Task scheduling extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-extensions/scheduling",
+            "keywords": [
+                "laravel-admin",
+                "scheduling",
+                "task"
+            ],
+            "time": "2018-05-07T02:07:14+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1193,6 +1359,56 @@
             "time": "2018-06-08T15:26:40+00:00"
         },
         {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/nrk/predis/f0210e38881631afeafb56ab43405a92cafd9fd1.zip",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
+        },
+        {
             "name": "psr/container",
             "version": "1.0.0",
             "source": {
@@ -1407,6 +1623,57 @@
                 "shell"
             ],
             "time": "2018-06-10T17:57:20+00:00"
+        },
+        {
+            "name": "qiniu/php-sdk",
+            "version": "v7.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qiniu/php-sdk.git",
+                "reference": "305ce1c1c0c71f794661fe45a96facf61ef96c5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/qiniu/php-sdk/305ce1c1c0c71f794661fe45a96facf61ef96c5d.zip",
+                "reference": "305ce1c1c0c71f794661fe45a96facf61ef96c5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Qiniu\\": "src/Qiniu"
+                },
+                "files": [
+                    "src/Qiniu/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Qiniu",
+                    "email": "sdk@qiniu.com",
+                    "homepage": "http://www.qiniu.com"
+                }
+            ],
+            "description": "Qiniu Resource (Cloud) Storage SDK for PHP",
+            "homepage": "http://developer.qiniu.com/",
+            "keywords": [
+                "cloud",
+                "qiniu",
+                "sdk",
+                "storage"
+            ],
+            "time": "2018-05-18T04:37:29+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -2566,9 +2833,136 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "zgldh/qiniu-laravel-storage",
+            "version": "0.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zgldh/qiniu-laravel-storage.git",
+                "reference": "dd40b1b0a4614691cebe11c9abc5d1c9b43016ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/zgldh/qiniu-laravel-storage/dd40b1b0a4614691cebe11c9abc5d1c9b43016ad.zip",
+                "reference": "dd40b1b0a4614691cebe11c9abc5d1c9b43016ad",
+                "shasum": ""
+            },
+            "require": {
+                "league/flysystem": "^1.0",
+                "php": ">=5.3.3",
+                "qiniu/php-sdk": "^7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "zgldh\\QiniuStorage\\QiniuFilesystemServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "zgldh\\QiniuStorage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "zgldh",
+                    "email": "zgldh@hotmail.com",
+                    "role": "Original Developer"
+                },
+                {
+                    "name": "abcsun",
+                    "email": "chenglongsun_nj@163.com",
+                    "homepage": "http://github.com/abcsun",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Qiniu Resource (Cloud) Storage SDK for Laravel 5",
+            "keywords": [
+                "cloud",
+                "laravel",
+                "qiniu",
+                "sdk",
+                "storage"
+            ],
+            "time": "2018-03-03T11:14:26+00:00"
         }
     ],
     "packages-dev": [
+        {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v3.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "d3cdca2ad6cc6e67735b4a63e7551c690a497f5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/barryvdh/laravel-debugbar/d3cdca2ad6cc6e67735b4a63e7551c690a497f5f.zip",
+                "reference": "d3cdca2ad6cc6e67735b4a63e7551c690a497f5f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "5.5.x|5.6.x",
+                "illuminate/session": "5.5.x|5.6.x",
+                "illuminate/support": "5.5.x|5.6.x",
+                "maximebf/debugbar": "~1.15.0",
+                "php": ">=7.0",
+                "symfony/debug": "^3|^4",
+                "symfony/finder": "^3|^4"
+            },
+            "require-dev": {
+                "illuminate/framework": "5.5.x"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Debugbar\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugbar": "Barryvdh\\Debugbar\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "time": "2018-05-03T18:27:04+00:00"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
@@ -2781,6 +3175,67 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/maximebf/php-debugbar/30e7d60937ee5f1320975ca9bc7bcdd44d500f07.zip",
+                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "^1.0",
+                "symfony/var-dumper": "^2.6|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.14-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DebugBar\\": "src/DebugBar/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug",
+                "debugbar"
+            ],
+            "time": "2017-12-15T11:13:46+00:00"
         },
         {
             "name": "mockery/mockery",
